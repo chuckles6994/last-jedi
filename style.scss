@@ -1,0 +1,214 @@
+$content_width:50em;
+$color1: #e0e0e0;
+$color2: #666666;
+$color3:#b7b7b7;
+$color4:#ffffff;
+
+html{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+  
+nav{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    padding: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+margin:5px;
+}
+
+section{
+ 
+
+    width: cover;
+    height:5%;
+    background-color: $color1;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    margin:0;
+    color: $color1;
+    >h2{
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    >div{
+        width: $content_width;
+        margin: 0;
+    }
+    &.intro{
+        background: transparent url("../img/welcome.jpg") center center/cover no-repeat
+        scroll;
+        
+        >h1{
+            font-size: 4em;
+            font-weight: normal;
+            margin:0;
+        }
+        >p{
+            font-size: 3em;
+        }
+    }
+    &.plot {
+        color: black;
+        >div{
+            display: flex;
+            padding: 1em 0;
+
+            >img{
+                width: 10rem;
+                height: 15rem;
+                margin-right: 1em;
+            }
+            .tagline{
+                font-size: 1.5em;
+                font-weight: bold;
+              
+            }
+            .sub{
+                font-size: 1.2em;
+                font-weight: none;
+            }
+        }
+    }
+    &.characters{
+        min-height: 30em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: transparent url("../img/rey-standing.jpg") center center/cover no-repeat scroll;
+        color: $color2;
+        >div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        >img{
+            height: 5em;
+            border-radius: 50%;
+            margin: 3px;
+        &.big {
+            height: 6rem;
+        }
+        &.bigger{
+            height: 7rem;
+        }
+        &.biggest {
+            height: 8rem;
+        }
+
+            }
+        }
+    }
+    &.ratings{
+        color: $color2;
+       
+        >div{
+            display:flex;
+            justify-content: space-around;
+        }
+            .rating{
+                width: 25em;
+                height:25%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                text-align: center;
+                margin: 5px;
+            
+            }
+            .source{
+                font-size: 1.2em;
+                padding: 0.5em;
+            }
+            .bar{
+                font-size: 2em;
+            background-color: $color3;
+            }
+
+        }
+    &.cast{
+        background-color: $color4;
+        color: $color2;
+        .main{
+            display: flex;
+            .img{
+                width:10em;
+                margin-right:1em;
+            }
+                .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+             >h3{
+                color: red;
+                }
+            }
+        }
+        .others{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5px;
+        
+            .actor{
+                position: relative;
+                margin-right: 0.25em;
+
+            }
+            img{
+                width:10em; 
+            }
+            .char{
+                position: absolute;
+                bottom:0%;
+                color: $color1;
+                width: 100%;
+                padding: 0.25em 0;
+                background: rgba(0,0,0,0.5);
+                text-align: center; 
+            }
+
+        }
+     }
+     
+    &.gallery{
+        color: $color3;
+        padding-left: 0;
+        padding-right: 0;
+        background: transparent url("../img/gallery.jpg") center center/cover
+        no-repeat scroll;
+        >div{
+            width: 800px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 30em;
+            padding: 0 1em;
+        }
+        .left, 
+        .right{
+            font-size: larger;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            color:$color1;
+            background-color:rgba(0,0,0,0.5)
+            
+        }
+      
+
+    } 
+
+
+}
+
+
